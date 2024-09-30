@@ -105,9 +105,32 @@ This architecture enables robust learning for mobile robot navigation in complex
 
 ---
 
+
 ## Installation and Usage
 
-### Dependencies
-To install the necessary dependencies, use the following command:
-```bash
-pip install -r requirements.txt
+### Build and Source the Project
+
+1. **Navigate to the project directory and build the project**:
+   ```bash
+   cd DeepReinforcmentLearning_Navigation_ROS2
+   colcon build
+   ```
+
+2. **Source the workspace**:
+   ```bash
+   source install/setup.bash
+   ```
+
+3. **Launch the training simulation**:
+   ```bash
+   ros2 launch td3 training_simulation.launch.py
+   ```
+
+4. **Launch the test simulation**:
+   ```bash
+   ros2 launch td3 test_simulation.launch.py
+   ```
+
+   
+
+   
